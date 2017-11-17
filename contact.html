@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta name="description" content="Teneriffa">
+        <meta name="keywords" content="Teneriffa,Reise,Urlaub,Kanarische,Inseln">
+        <meta name="author" content="Stephan Kritzler">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="style/images/favicon.gif"/>
+        <title>Teneriffa</title>
+</head>
+<body>
+    
+<script>
+    function validateForm(){
+	   var x= document.forms["myform"]["name"].value;
+	   if (x == "") {
+		alert("Bitte geben Sie einen Namen ein!");
+		return false;}
+        
+        var y= document.forms["myform"]["email"].value;
+	   if (y == "") {
+		alert("Bitte geben Sie eine gültige Email Adresse ein!");
+		return false;}
+}
+</script>
+
+    <header>
+        <section>
+                   
+        </section> <h1>Willkommen auf Teneriffa</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="#">Über uns</a></li>
+                    </ul>
+                </nav>
+    </header>
+<center>  
+ <main>    
+    <section class="contact">
+        <h3>Kontaktieren Sie mich</h3>
+            <form name="myform" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        
+            <span class="text">Name:</span> 
+            <span class="input"><input type="text" placeholder="Namen hier eingeben" name="name"/></span>
+            <div class="clearfix"><br></div>
+            
+            <span class="text">Email:</span> 
+            <span class="input"><input type="text" placeholder="Email Adresse hier eingeben" name="email"/></span>
+            <div class="clearfix"><br></div>
+            
+            <span class="text">Subject:</span> 
+            <span class="input"><input type="text" name="subject"/></span>
+            <div class="clearfix"><br></div>
+            
+            <span class="text">Message:</span> 
+            <span class="input"><textarea rows="4" cols="22"></textarea></span>
+            <div class="clearfix"><br></div>
+            
+            <p>
+            <button name="send" type="submit" value="send">Absenden</button>
+            <button name="reset" type="reset" value="reset">Zurücksetzen</button>    
+            </p>
+            
+        </form>
+ 
+    </section>
+        
+    
+ </main>
+</center>
+
+ <footer>
+     <article class="copyright"> &copy; 2017 Stephan </article>
+     
+     <article class="social">  
+	   <a href="https://www.facebook.com/ " target="_blank"><i class="fa fa-facebook"></i></a>
+	   <a href="https://twitter.com/?lang=de" target="_blank"><i class="fa fa-twitter"></i></a>
+     </article>
+       
+     <div class="clearfix"></div>
+  
+    </footer>
+</body>
+</html>
